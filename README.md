@@ -69,4 +69,17 @@ flowchart LR
   <img src="https://img.shields.io/badge/ARKit-000000?style=flat-square&logo=apple&logoColor=white"/>
 </p>
 
+### 📈 Activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Maaz-qureshi98/Maaz-qureshi98/output/snake-dark.svg"/>
+    <img src="https://raw.githubusercontent.com/Maaz-qureshi98/Maaz-qureshi98/output/snake.svg" alt="Contribution snake"/>
+  </picture>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Maaz-qureshi98&theme=tokyonight&hide_border=true&background=0b1020" alt="GitHub streak"/>
+</p>
+
 <div align="center"><sub>🛠️ Building robots that understand what they see and do what they're told.</sub></div>
