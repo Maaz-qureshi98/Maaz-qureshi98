@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#131a35"/>
+    </linearGradient>
+    <linearGradient id="flow" gradientUnits="userSpaceOnUse" x1="220" y1="0" x2="745" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <style>
+      .title{fill:#f8fafc;font-size:40px;font-weight:700;letter-spacing:.5px}
+      .sub{fill:#94a3b8;font-size:17px}
+      .lbl{fill:#e2e8f0;font-size:15px;font-weight:600;letter-spacing:2px}
+      .cap{fill:#64748b;font-size:12px}
+      .dash{stroke-dasharray:6 8;animation:dash 1.4s linear infinite}
+      @keyframes dash{to{stroke-dashoffset:-28}}
+      .pulse{animation:pulse 2.4s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+      @keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+      .blink{animation:blink 1.2s steps(1) infinite}
+      @keyframes blink{50%{opacity:0}}
+      .tok{animation:tok 3s ease-in-out infinite;opacity:0}
+      .t2{animation-delay:.4s}.t3{animation-delay:.8s}
+      @keyframes tok{0%{opacity:0}20%,70%{opacity:1}100%{opacity:0}}
+      .arm{animation:arm 3.2s ease-in-out infinite;transform-origin:820px 232px}
+      @keyframes arm{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(10deg)}}
+      .fore{animation:fore 3.2s ease-in-out infinite;transform-origin:850px 172px}
+      @keyframes fore{0%,100%{transform:rotate(12deg)}50%{transform:rotate(-14deg)}}
+      .scan{animation:scan 2.6s ease-in-out infinite}
+      @keyframes scan{0%,100%{transform:translateY(-22px)}50%{transform:translateY(22px)}}
+    </style>
+  </defs>
+
+  <rect width="1000" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1000" height="300" rx="18" fill="url(#grid)"/>
+
+  <text x="40" y="62" class="title">Maaz Qureshi</text>
+  <text x="40" y="92" class="sub">Research Engineer · Embodied AI · Robot Learning · Perception &amp; Manipulation</text>
+
+  <!-- flow lines -->
+  <path d="M220 200 H395" stroke="url(#flow)" stroke-width="3" fill="none" class="dash"/>
+  <path d="M605 200 H745" stroke="url(#flow)" stroke-width="3" fill="none" class="dash"/>
+
+  <!-- VISION -->
+  <g>
+    <circle cx="150" cy="200" r="62" fill="#38bdf8" fill-opacity="0.08" class="pulse"/>
+    <rect x="105" y="168" width="90" height="64" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="150" cy="200" r="20" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <circle cx="150" cy="200" r="8" fill="#38bdf8"/>
+    <g class="scan"><line x1="110" y1="200" x2="190" y2="200" stroke="#38bdf8" stroke-opacity="0.6" stroke-width="2"/></g>
+    <text x="150" y="268" text-anchor="middle" class="lbl">VISION</text>
+    <text x="150" y="286" text-anchor="middle" class="cap">RGB-D · 4D mmWave radar · SLAM</text>
+  </g>
+
+  <!-- LANGUAGE -->
+  <g>
+    <rect x="400" y="150" width="200" height="100" rx="14" fill="#0f172a" stroke="#a78bfa" stroke-width="2"/>
+    <text x="418" y="180" fill="#a78bfa" font-family="ui-monospace, Menlo, monospace" font-size="12.5">&gt; "pick up the red cup"</text>
+    <g font-family="ui-monospace, Menlo, monospace" font-size="13">
+      <rect x="418" y="196" width="46" height="22" rx="5" fill="#a78bfa" fill-opacity="0.22" class="tok"/>
+      <text x="441" y="212" text-anchor="middle" fill="#ddd6fe" class="tok">pick</text>
+      <rect x="470" y="196" width="40" height="22" rx="5" fill="#a78bfa" fill-opacity="0.22" class="tok t2"/>
+      <text x="490" y="212" text-anchor="middle" fill="#ddd6fe" class="tok t2">red</text>
+      <rect x="516" y="196" width="44" height="22" rx="5" fill="#a78bfa" fill-opacity="0.22" class="tok t3"/>
+      <text x="538" y="212" text-anchor="middle" fill="#ddd6fe" class="tok t3">cup</text>
+      <rect x="566" y="200" width="8" height="15" fill="#a78bfa" class="blink"/>
+    </g>
+    <text x="418" y="240" class="cap">VLA policy · tokens → actions</text>
+    <text x="500" y="268" text-anchor="middle" class="lbl">LANGUAGE</text>
+    <text x="500" y="286" text-anchor="middle" class="cap">reasoning · grounding · planning</text>
+  </g>
+
+  <!-- ACTION: robot arm -->
+  <g>
+    <rect x="790" y="232" width="60" height="14" rx="4" fill="#334155"/>
+    <g class="arm">
+      <rect x="812" y="166" width="16" height="70" rx="8" fill="#f472b6"/>
+      <circle cx="820" cy="232" r="10" fill="#0f172a" stroke="#f472b6" stroke-width="3"/>
+      <g class="fore">
+        <rect x="818" y="164" width="72" height="14" rx="7" fill="#f9a8d4"/>
+        <circle cx="820" cy="171" r="9" fill="#0f172a" stroke="#f472b6" stroke-width="3"/>
+        <path d="M888 160 l14 -6 M888 182 l14 6" stroke="#f9a8d4" stroke-width="4" stroke-linecap="round"/>
+      </g>
+    </g>
+    <rect x="900" y="218" width="26" height="28" rx="4" fill="#ef4444" fill-opacity="0.85"/>
+    <text x="850" y="268" text-anchor="middle" class="lbl">ACTION</text>
+    <text x="850" y="286" text-anchor="middle" class="cap">Franka · OpenArm · multi-robot fleets</text>
+  </g>
+</svg>
