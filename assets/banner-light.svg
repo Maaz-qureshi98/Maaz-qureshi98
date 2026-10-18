@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <style>
+    text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif}
+    .n{fill:#1d1d1f;font-size:52px;font-weight:600;letter-spacing:-1.2px}
+    .s{fill:#6e6e73;font-size:22px;font-weight:400;letter-spacing:-.2px}
+    .h{fill:#1d1d1f;font-size:17px;font-weight:600;letter-spacing:-.1px}
+    .c{fill:#6e6e73;font-size:14px}
+  </style>
+  <rect x=".5" y=".5" width="1199" height="359" rx="16" fill="#ffffff" stroke="#e5e5ea"/>
+  <text x="140" y="118" class="n">Maaz Qureshi</text>
+  <text x="140" y="158" class="s">Research Engineer, Embodied AI and Robot Learning</text>
+  <line x1="140" y1="262" x2="1060" y2="262" stroke="#d2d2d7" stroke-width="1.5"/>
+  <circle r="4" cy="262" fill="#0071e3">
+    <animate attributeName="cx" values="140;1060" dur="4.5s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.92;1" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="262" r="7" fill="#ffffff" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="140" y="300" text-anchor="middle" class="h">Perceive</text>
+  <text x="140" y="322" text-anchor="middle" class="c">RGB-D · 4D radar · SLAM</text>
+  <circle cx="600" cy="262" r="7" fill="#ffffff" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="600" y="300" text-anchor="middle" class="h">Reason</text>
+  <text x="600" y="322" text-anchor="middle" class="c">Vision-language-action policies</text>
+  <circle cx="1060" cy="262" r="7" fill="#ffffff" stroke="#1d1d1f" stroke-width="1.5"/>
+  <text x="1060" y="300" text-anchor="middle" class="h">Act</text>
+  <text x="1060" y="322" text-anchor="middle" class="c">Manipulators · multi-robot fleets</text>
+
+</svg>
