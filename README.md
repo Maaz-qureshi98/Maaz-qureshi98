@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" width="100%" alt="Maaz Qureshi, Research Engineer, Embodied AI and Robot Learning">
+  <img src="assets/banner-light.svg" width="100%" alt="Vision and language flow into a VLA world action model, which outputs robot actions">
 </picture>
 
 I build robots that perceive, reason, and act in the physical world. My work covers vision-language-action and diffusion policies on real manipulators, multimodal perception with RGB-D and 4D mmWave radar, and the real-time systems that run them across multi-robot platforms.
