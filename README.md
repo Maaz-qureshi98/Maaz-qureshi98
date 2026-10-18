@@ -53,6 +53,15 @@ flowchart LR
 | 🌊 [**4D mmWave Radar ROS 2**](https://github.com/Maaz-qureshi98/Radar-ROS2_Perception-4DmmWave) | ROS 2 perception for Altos 4D mmWave radar | Tooling |
 | 📶 [**5G Quectel drivers**](https://github.com/Maaz-qureshi98/5G-quectel-linux_drivers) | 5G modem drivers for Ubuntu 22.04 robots | Tooling |
 
+### 📄 Publications
+
+- **CRADMap: Applied Distributed Volumetric Mapping with 5G-Connected Multi-Robots and 4D Radar Perception**<br/>
+  *ICARM 2025* · [paper](https://doi.org/10.1109/ICARM65671.2025.11293594) · [code](https://github.com/Maaz-qureshi98/CRADMap-Multi-Robot-Mapping)
+- **Hemispherical Angular Power Mapping of Installed mmWave Radar Modules Under Realistic Deployment Constraints** (RAPTAR)<br/>
+  *IEEE AP-S/URSI 2026* · [code](https://github.com/Maaz-qureshi98/RAPTAR-Motion-Planning) · extended journal version under review
+
+More on [Google Scholar](https://scholar.google.ca/citations?user=hC7tswoAAAAJ&hl=en).
+
 ### 🛠️ Toolbox
 
 <p align="center">
